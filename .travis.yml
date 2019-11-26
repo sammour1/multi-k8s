@@ -12,7 +12,7 @@ before_install:
   - source $HOME/google-cloud-sdk/path.bash.inc
   - gcloud components update kubectl
   # to install and update kubectl insidee our Travis env.
-  - gcloud auth activate-service-account --key-file service-accout.json
+  - gcloud auth activate-service-account --key-file service-account.json
   # to tell the SDK who we are, we have to give it access to our account, we have it activate service account
   # and create the file with the credintials 
   - gcloud config set project multi-k8s-260020
